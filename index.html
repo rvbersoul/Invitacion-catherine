@@ -1,62 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#6d4c8f">
-<title>50 años de Catherine</title>
-<link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d4c8f">
+  <title>50 años de Catherine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-<section id="bienvenida" class="hero">
-<div class="hero-card">
-<p class="detalle">✨ 50 años ✨</p>
-<h1>Porque 50 años no es una fecha cualquiera, quiero que me acompañes a honrar este camino recorrido.</h1>
-<button id="abrirBtn">Abrir invitación</button>
-</div>
-</section>
+  <section class="portada" id="portada">
+    <div class="decoracion decoracion-1"></div>
+    <div class="decoracion decoracion-2"></div>
 
-<main id="contenido" class="oculto">
-<section class="card invitacion">
-<img src="invitacion.jpg" alt="Invitación de Catherine">
-</section>
+    <div class="portada-contenido">
+      <p class="mensaje">
+        “Porque 50 años no se cumplen todos los días,
+        quiero que me acompañes a honrar este camino recorrido.”
+      </p>
 
-<section class="card evento">
-<h2>Celebremos juntos</h2>
-<p><strong>Catherine</strong></p>
-<p>📅 10 de agosto</p>
-<p>🕠 17:30 a 20:00 hrs.</p>
-<p>📍 Nuestra Señora de Los Dolores 1859<br>La Florida, Santiago</p>
-</section>
+      <div class="linea-dorada"></div>
 
-<section class="card contador">
-<h2>Cuenta regresiva</h2>
-<div id="countdown"></div>
-</section>
+      <h1>50 años de Catherine</h1>
 
-<section class="card galeria">
-<h2>Recuerdos</h2>
-<div id="galeria"></div>
-</section>
+      <button class="boton boton-principal" id="abrirBtn">
+        Abrir invitación <span>↓</span>
+      </button>
+    </div>
+  </section>
 
-<section class="card rsvp">
-<h2>Confirma tu asistencia</h2>
-<form id="rsvpForm">
-<input id="nombre" type="text" placeholder="Nombre completo" required>
-<input id="acompanantes" type="number" value="1" min="1">
-<textarea id="mensaje" placeholder="Mensaje (opcional)"></textarea>
-<button type="submit">Confirmar asistencia</button>
-</form>
-<p id="estado"></p>
-</section>
+  <main id="contenido" class="contenido oculto">
+    <section class="invitacion">
+      <img
+        src="invitacion.jpg"
+        alt="Invitación de cumpleaños de Catherine"
+        class="imagen-invitacion"
+      >
+    </section>
 
-<section class="card ubicacion">
-<h2>Ubicación</h2>
-<a id="mapaBtn" href="https://maps.app.goo.gl/8Krnu1iVpE65QR476?g_st=ic" target="_blank">Cómo llegar</a>
-</section>
+    <section class="contador-seccion">
+      <p class="contador-titulo">Falta muy poquito para celebrar</p>
+      <h2>La cuenta regresiva</h2>
 
-<footer><p>Gracias por acompañarme en este momento tan especial. 💜</p></footer>
-</main>
-<script src="script.js"></script>
+      <div class="contador" id="countdown">
+        <div class="tiempo">
+          <span id="dias">00</span>
+          <small>DÍAS</small>
+        </div>
+        <div class="separador">:</div>
+        <div class="tiempo">
+          <span id="horas">00</span>
+          <small>HORAS</small>
+        </div>
+        <div class="separador">:</div>
+        <div class="tiempo">
+          <span id="minutos">00</span>
+          <small>MINUTOS</small>
+        </div>
+        <div class="separador">:</div>
+        <div class="tiempo">
+          <span id="segundos">00</span>
+          <small>SEGUNDOS</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="acciones">
+      <a
+        class="boton boton-whatsapp"
+        id="whatsappBtn"
+        href="#"
+        target="_blank"
+        rel="noopener"
+      >
+        <span>💜</span> Confirmar asistencia
+      </a>
+
+      <a
+        class="boton boton-ubicacion"
+        href="https://maps.app.goo.gl/vfGW5C938U7VETEL8?g_st=ic"
+        target="_blank"
+        rel="noopener"
+      >
+        <span>💚</span> Ver ubicación
+      </a>
+    </section>
+
+    <footer>
+      <p>Será un gusto celebrar este momento contigo ✨</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
