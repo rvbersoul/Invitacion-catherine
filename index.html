@@ -3,100 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="theme-color" content="#6d4c8f">
 <title>50 años de Catherine</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-background:#efe7dc;
-font-family:Georgia, serif;
-display:flex;
-justify-content:center;
-padding:40px 20px;
-}
-
-.container{
-max-width:650px;
-width:100%;
-text-align:center;
-}
-
-img{
-width:100%;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,.18);
-display:block;
-}
-
-h1{
-font-size:42px;
-color:#6b3fa0;
-margin:35px 0 10px;
-font-weight:normal;
-}
-
-h2{
-font-size:22px;
-color:#555;
-font-weight:normal;
-margin-bottom:35px;
-}
-
-.boton{
-display:inline-block;
-margin-top:15px;
-padding:18px 42px;
-background:#7d4ab4;
-color:white;
-text-decoration:none;
-font-size:22px;
-border-radius:50px;
-transition:.25s;
-}
-
-.boton:hover{
-background:#633494;
-transform:scale(1.03);
-}
-
-footer{
-margin-top:45px;
-color:#777;
-font-size:16px;
-line-height:1.7;
-}
-
-</style>
-
+<link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-
-<div class="container">
-
-<img src="invitacion.jpg" alt="Invitación">
-
-<h1>¡Los espero!</h1>
-
-<h2>Confirma tu asistencia haciendo clic aquí.</h2>
-
-<a class="boton" href="https://forms.gle/REEMPLAZAREMOS_ESTO">
-Confirmar asistencia
-</a>
-
-<footer>
-Con mucho cariño ❤️<br>
-Catherine
-</footer>
-
+<section id="bienvenida" class="hero">
+<div class="hero-card">
+<p class="detalle">✨ 50 años ✨</p>
+<h1>Porque 50 años no es una fecha cualquiera, quiero que me acompañes a honrar este camino recorrido.</h1>
+<button id="abrirBtn">Abrir invitación</button>
 </div>
+</section>
 
+<main id="contenido" class="oculto">
+<section class="card invitacion">
+<img src="invitacion.jpg" alt="Invitación de Catherine">
+</section>
+
+<section class="card evento">
+<h2>Celebremos juntos</h2>
+<p><strong>Catherine</strong></p>
+<p>📅 10 de agosto</p>
+<p>🕠 17:30 a 20:00 hrs.</p>
+<p>📍 Nuestra Señora de Los Dolores 1859<br>La Florida, Santiago</p>
+</section>
+
+<section class="card contador">
+<h2>Cuenta regresiva</h2>
+<div id="countdown"></div>
+</section>
+
+<section class="card galeria">
+<h2>Recuerdos</h2>
+<div id="galeria"></div>
+</section>
+
+<section class="card rsvp">
+<h2>Confirma tu asistencia</h2>
+<form id="rsvpForm">
+<input id="nombre" type="text" placeholder="Nombre completo" required>
+<input id="acompanantes" type="number" value="1" min="1">
+<textarea id="mensaje" placeholder="Mensaje (opcional)"></textarea>
+<button type="submit">Confirmar asistencia</button>
+</form>
+<p id="estado"></p>
+</section>
+
+<section class="card ubicacion">
+<h2>Ubicación</h2>
+<a id="mapaBtn" href="https://maps.app.goo.gl/8Krnu1iVpE65QR476?g_st=ic" target="_blank">Cómo llegar</a>
+</section>
+
+<footer><p>Gracias por acompañarme en este momento tan especial. 💜</p></footer>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
