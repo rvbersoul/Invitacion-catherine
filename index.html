@@ -4,42 +4,73 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Invitación Catherine</title>
+<title>50 años de Catherine</title>
 
 <style>
 
-body{
+*{
 margin:0;
-padding:20px;
-background:#f9edf3;
-font-family:Arial,sans-serif;
-text-align:center;
+padding:0;
+box-sizing:border-box;
 }
 
-h1{
-color:#b03a70;
+body{
+background:#efe7dc;
+font-family:Georgia, serif;
+display:flex;
+justify-content:center;
+padding:40px 20px;
+}
+
+.container{
+max-width:650px;
+width:100%;
+text-align:center;
 }
 
 img{
 width:100%;
-max-width:500px;
 border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
+box-shadow:0 15px 40px rgba(0,0,0,.18);
+display:block;
 }
 
-button{
-margin-top:20px;
-padding:15px 30px;
-font-size:18px;
-background:#d85b8b;
+h1{
+font-size:42px;
+color:#6b3fa0;
+margin:35px 0 10px;
+font-weight:normal;
+}
+
+h2{
+font-size:22px;
+color:#555;
+font-weight:normal;
+margin-bottom:35px;
+}
+
+.boton{
+display:inline-block;
+margin-top:15px;
+padding:18px 42px;
+background:#7d4ab4;
 color:white;
-border:none;
-border-radius:40px;
-cursor:pointer;
+text-decoration:none;
+font-size:22px;
+border-radius:50px;
+transition:.25s;
 }
 
-button:hover{
-background:#b83d6f;
+.boton:hover{
+background:#633494;
+transform:scale(1.03);
+}
+
+footer{
+margin-top:45px;
+color:#777;
+font-size:16px;
+line-height:1.7;
 }
 
 </style>
@@ -48,16 +79,24 @@ background:#b83d6f;
 
 <body>
 
-<h1>¡Estás Invitado!</h1>
+<div class="container">
 
-<img src="invitacion.jpg">
+<img src="invitacion.jpg" alt="Invitación">
 
-<br>
+<h1>¡Los espero!</h1>
 
-<button onclick="window.location='#confirmacion'">
+<h2>Confirma tu asistencia haciendo clic aquí.</h2>
+
+<a class="boton" href="https://forms.gle/REEMPLAZAREMOS_ESTO">
 Confirmar asistencia
-</button>
+</a>
+
+<footer>
+Con mucho cariño ❤️<br>
+Catherine
+</footer>
+
+</div>
 
 </body>
-
 </html>
